@@ -1,0 +1,144 @@
+// —————————————————————————————————————————————— // 
+// ———————————————————— FLEX ———————————————————— // 
+// —————————————————————————————————————————————— //
+
+.flex-row {display: flex; flex-wrap: wrap;}
+.flex-column {display: flex; flex-direction:column; flex-wrap: wrap;}
+
+
+/* —————————————— Setting columns —————————————— */
+// .flex-row, .flex-column{
+//     [class*="fcol-"] {flex: 0 0 auto;} 
+// }
+
+/* —————————————— Mobile —————————————— */
+.fcol-xs {flex-grow: 1; flex-basis: 0; max-width: 100%;}
+
+/* —————————————— Norm col —————————————— */
+.fcol-1 {flex-basis: calc((100% / 12) * 1); max-width: calc((100% / 12) * 1);}
+.fcol-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+.fcol-3 {flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+.fcol-4 {flex-basis: calc((100% / 12) * 4); max-width: calc((100% / 12) * 4);}
+.fcol-5 {flex-basis: calc((100% / 12) * 5); max-width: calc((100% / 12) * 5);}
+.fcol-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
+.fcol-7 {flex-basis: calc((100% / 12) * 7); max-width: calc((100% / 12) * 7);}
+.fcol-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+.fcol-9 {flex-basis: calc((100% / 12) * 9); max-width: calc((100% / 12) * 9);}
+.fcol-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+.fcol-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+.fcol-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+
+/* —————————————— XS 12 col —————————————— */
+
+.fcol-xs-1 {flex-basis: calc((100% / 12) * 1); max-width: calc((100% / 12) * 1);}
+.fcol-xs-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+.fcol-xs-3 {flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+.fcol-xs-4 {flex-basis: calc((100% / 12) * 4); max-width: calc((100% / 12) * 4);}
+.fcol-xs-5 {flex-basis: calc((100% / 12) * 5); max-width: calc((100% / 12) * 5);}
+.fcol-xs-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
+.fcol-xs-7 {flex-basis: calc((100% / 12) * 7); max-width: calc((100% / 12) * 7);}
+.fcol-xs-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+.fcol-xs-9 {flex-basis: calc((100% / 12) * 9); max-width: calc((100% / 12) * 9);}
+.fcol-xs-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+.fcol-xs-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+.fcol-xs-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+
+/* —————————————— SM —————————————— */
+
+@media screen and (min-width:540px){
+
+    /* —————————————— SM COL —————————————— */
+    .fcol-sm-1 {flex-basis: calc((100% / 12) * 1); max-width: calc((100% / 12) * 1);}
+    .fcol-sm-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+    .fcol-sm-3 {flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+    .fcol-sm-4 {flex-basis: calc((100% / 12) * 4); max-width: calc((100% / 12) * 4);}
+    .fcol-sm-5 {flex-basis: calc((100% / 12) * 5); max-width: calc((100% / 12) * 5);}
+    .fcol-sm-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
+    .fcol-sm-7 {flex-basis: calc((100% / 12) * 7); max-width: calc((100% / 12) * 7);}
+    .fcol-sm-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+    .fcol-sm-9 {flex-basis: calc((100% / 12) * 9); max-width: calc((100% / 12) * 9);}
+    .fcol-sm-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+    .fcol-sm-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+    .fcol-sm-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+
+}
+
+/* —————————————— MD —————————————— */
+
+@media screen and (min-width:720px){
+
+    /* —————————————— MD COL —————————————— */
+    .fcol-md-1 {flex-basis: calc((100% / 12) * 1); max-width: calc((100% / 12) * 1);}
+    .fcol-md-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+    .fcol-md-3 {flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+    .fcol-md-4 {flex-basis: calc((100% / 12) * 4); max-width: calc((100% / 12) * 4);}
+    .fcol-md-5 {flex-basis: calc((100% / 12) * 5); max-width: calc((100% / 12) * 5);}
+    .fcol-md-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
+    .fcol-md-7 {flex-basis: calc((100% / 12) * 7); max-width: calc((100% / 12) * 7);}
+    .fcol-md-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+    .fcol-md-9 {flex-basis: calc((100% / 12) * 9); max-width: calc((100% / 12) * 9);}
+    .fcol-md-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+    .fcol-md-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+    .fcol-md-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+
+}
+
+/* —————————————— LG —————————————— */
+
+@media screen and (min-width:960px){
+
+    .container{width: 960px; max-width: 960px;}
+
+    /* —————————————— LG COL —————————————— */
+    .fcol-lg-1 {flex-basis: calc((100% / 12) * 1); max-width: calc((100% / 12) * 1);}
+    .fcol-lg-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+    .fcol-lg-3 {flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+    .fcol-lg-4 {flex-basis: calc((100% / 12) * 4); max-width: calc((100% / 12) * 4);}
+    .fcol-lg-5 {flex-basis: calc((100% / 12) * 5); max-width: calc((100% / 12) * 5);}
+    .fcol-lg-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
+    .fcol-lg-7 {flex-basis: calc((100% / 12) * 7); max-width: calc((100% / 12) * 7);}
+    .fcol-lg-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+    .fcol-lg-9 {flex-basis: calc((100% / 12) * 9); max-width: calc((100% / 12) * 9);}
+    .fcol-lg-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+    .fcol-lg-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+    .fcol-lg-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+}
+
+
+/* —————————————— XL —————————————— */
+
+@media screen and (min-width:1200px){
+
+    /* —————————————— XL COL —————————————— */
+    .fcol-xl-1 {flex-basis: calc((100% / 12) * 1); max-width: calc((100% / 12) * 1);}
+    .fcol-xl-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+    .fcol-xl-3 {flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+    .fcol-xl-4 {flex-basis: calc((100% / 12) * 4); max-width: calc((100% / 12) * 4);}
+    .fcol-xl-5 {flex-basis: calc((100% / 12) * 5); max-width: calc((100% / 12) * 5);}
+    .fcol-xl-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
+    .fcol-xl-7 {flex-basis: calc((100% / 12) * 7); max-width: calc((100% / 12) * 7);}
+    .fcol-xl-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+    .fcol-xl-9 {flex-basis: calc((100% / 12) * 9); max-width: calc((100% / 12) * 9);}
+    .fcol-xl-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+    .fcol-xl-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+    .fcol-xl-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+}
+
+/* —————————————— XXL —————————————— */
+
+@media screen and (min-width:1400px){
+
+    /* —————————————— XXL COL —————————————— */
+    .fcol-xxl-1 {flex-basis: calc((100% / 12) * 1); max-width: calc((100% / 12) * 1);}
+    .fcol-xxl-2 {flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+    .fcol-xxl-3 {flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+    .fcol-xxl-4 {flex-basis: calc((100% / 12) * 4); max-width: calc((100% / 12) * 4);}
+    .fcol-xxl-5 {flex-basis: calc((100% / 12) * 5); max-width: calc((100% / 12) * 5);}
+    .fcol-xxl-6 {flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
+    .fcol-xxl-7 {flex-basis: calc((100% / 12) * 7); max-width: calc((100% / 12) * 7);}
+    .fcol-xxl-8 {flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+    .fcol-xxl-9 {flex-basis: calc((100% / 12) * 9); max-width: calc((100% / 12) * 9);}
+    .fcol-xxl-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+    .fcol-xxl-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+    .fcol-xxl-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+}

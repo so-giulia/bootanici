@@ -1,0 +1,29 @@
+@mixin a-reset{
+    text-decoration: none;
+
+    &:hover, &:focus, &:active{
+        text-decoration: none;
+    }
+}
+
+@mixin foot-a-reset{
+    color: $main_light;
+    text-decoration: none;
+    transition: color .3s ease;
+
+        &:visited,
+        &:active,
+        &:focus,
+        &:hover{
+            color: $main_light;
+            text-decoration: none;
+            transition: color .3s ease;
+        }
+}
+
+@mixin absolute-center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}

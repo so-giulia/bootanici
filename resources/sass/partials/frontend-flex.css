@@ -1,0 +1,507 @@
+@charset "UTF-8";
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* —————————————— Setting columns —————————————— */
+/* —————————————— Mobile —————————————— */
+.fcol-xs {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  max-width: 100%;
+}
+
+/* —————————————— Norm col —————————————— */
+.fcol-1 {
+  -ms-flex-preferred-size: calc((100% / 12) * 1);
+      flex-basis: calc((100% / 12) * 1);
+  max-width: calc((100% / 12) * 1);
+}
+
+.fcol-2 {
+  -ms-flex-preferred-size: calc((100% / 12) * 2);
+      flex-basis: calc((100% / 12) * 2);
+  max-width: calc((100% / 12) * 2);
+}
+
+.fcol-3 {
+  -ms-flex-preferred-size: calc((100% / 12) * 3);
+      flex-basis: calc((100% / 12) * 3);
+  max-width: calc((100% / 12) * 3);
+}
+
+.fcol-4 {
+  -ms-flex-preferred-size: calc((100% / 12) * 4);
+      flex-basis: calc((100% / 12) * 4);
+  max-width: calc((100% / 12) * 4);
+}
+
+.fcol-5 {
+  -ms-flex-preferred-size: calc((100% / 12) * 5);
+      flex-basis: calc((100% / 12) * 5);
+  max-width: calc((100% / 12) * 5);
+}
+
+.fcol-6 {
+  -ms-flex-preferred-size: calc((100% / 12) * 6);
+      flex-basis: calc((100% / 12) * 6);
+  max-width: calc((100% / 12) * 6);
+}
+
+.fcol-7 {
+  -ms-flex-preferred-size: calc((100% / 12) * 7);
+      flex-basis: calc((100% / 12) * 7);
+  max-width: calc((100% / 12) * 7);
+}
+
+.fcol-8 {
+  -ms-flex-preferred-size: calc((100% / 12) * 8);
+      flex-basis: calc((100% / 12) * 8);
+  max-width: calc((100% / 12) * 8);
+}
+
+.fcol-9 {
+  -ms-flex-preferred-size: calc((100% / 12) * 9);
+      flex-basis: calc((100% / 12) * 9);
+  max-width: calc((100% / 12) * 9);
+}
+
+.fcol-10 {
+  -ms-flex-preferred-size: calc((100% / 12) * 10);
+      flex-basis: calc((100% / 12) * 10);
+  max-width: calc((100% / 12) * 10);
+}
+
+.fcol-11 {
+  -ms-flex-preferred-size: calc((100% / 12) * 11);
+      flex-basis: calc((100% / 12) * 11);
+  max-width: calc((100% / 12) * 11);
+}
+
+.fcol-12 {
+  -ms-flex-preferred-size: calc((100% / 12) * 12);
+      flex-basis: calc((100% / 12) * 12);
+  max-width: calc((100% / 12) * 12);
+}
+
+/* —————————————— XS 12 col —————————————— */
+.fcol-xs-1 {
+  -ms-flex-preferred-size: calc((100% / 12) * 1);
+      flex-basis: calc((100% / 12) * 1);
+  max-width: calc((100% / 12) * 1);
+}
+
+.fcol-xs-2 {
+  -ms-flex-preferred-size: calc((100% / 12) * 2);
+      flex-basis: calc((100% / 12) * 2);
+  max-width: calc((100% / 12) * 2);
+}
+
+.fcol-xs-3 {
+  -ms-flex-preferred-size: calc((100% / 12) * 3);
+      flex-basis: calc((100% / 12) * 3);
+  max-width: calc((100% / 12) * 3);
+}
+
+.fcol-xs-4 {
+  -ms-flex-preferred-size: calc((100% / 12) * 4);
+      flex-basis: calc((100% / 12) * 4);
+  max-width: calc((100% / 12) * 4);
+}
+
+.fcol-xs-5 {
+  -ms-flex-preferred-size: calc((100% / 12) * 5);
+      flex-basis: calc((100% / 12) * 5);
+  max-width: calc((100% / 12) * 5);
+}
+
+.fcol-xs-6 {
+  -ms-flex-preferred-size: calc((100% / 12) * 6);
+      flex-basis: calc((100% / 12) * 6);
+  max-width: calc((100% / 12) * 6);
+}
+
+.fcol-xs-7 {
+  -ms-flex-preferred-size: calc((100% / 12) * 7);
+      flex-basis: calc((100% / 12) * 7);
+  max-width: calc((100% / 12) * 7);
+}
+
+.fcol-xs-8 {
+  -ms-flex-preferred-size: calc((100% / 12) * 8);
+      flex-basis: calc((100% / 12) * 8);
+  max-width: calc((100% / 12) * 8);
+}
+
+.fcol-xs-9 {
+  -ms-flex-preferred-size: calc((100% / 12) * 9);
+      flex-basis: calc((100% / 12) * 9);
+  max-width: calc((100% / 12) * 9);
+}
+
+.fcol-xs-10 {
+  -ms-flex-preferred-size: calc((100% / 12) * 10);
+      flex-basis: calc((100% / 12) * 10);
+  max-width: calc((100% / 12) * 10);
+}
+
+.fcol-xs-11 {
+  -ms-flex-preferred-size: calc((100% / 12) * 11);
+      flex-basis: calc((100% / 12) * 11);
+  max-width: calc((100% / 12) * 11);
+}
+
+.fcol-xs-12 {
+  -ms-flex-preferred-size: calc((100% / 12) * 12);
+      flex-basis: calc((100% / 12) * 12);
+  max-width: calc((100% / 12) * 12);
+}
+
+/* —————————————— SM —————————————— */
+@media screen and (min-width: 540px) {
+  /* —————————————— SM COL —————————————— */
+  .fcol-sm-1 {
+    -ms-flex-preferred-size: calc((100% / 12) * 1);
+        flex-basis: calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
+  }
+  .fcol-sm-2 {
+    -ms-flex-preferred-size: calc((100% / 12) * 2);
+        flex-basis: calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2);
+  }
+  .fcol-sm-3 {
+    -ms-flex-preferred-size: calc((100% / 12) * 3);
+        flex-basis: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+  }
+  .fcol-sm-4 {
+    -ms-flex-preferred-size: calc((100% / 12) * 4);
+        flex-basis: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
+  }
+  .fcol-sm-5 {
+    -ms-flex-preferred-size: calc((100% / 12) * 5);
+        flex-basis: calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
+  }
+  .fcol-sm-6 {
+    -ms-flex-preferred-size: calc((100% / 12) * 6);
+        flex-basis: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+  }
+  .fcol-sm-7 {
+    -ms-flex-preferred-size: calc((100% / 12) * 7);
+        flex-basis: calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
+  }
+  .fcol-sm-8 {
+    -ms-flex-preferred-size: calc((100% / 12) * 8);
+        flex-basis: calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
+  }
+  .fcol-sm-9 {
+    -ms-flex-preferred-size: calc((100% / 12) * 9);
+        flex-basis: calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
+  }
+  .fcol-sm-10 {
+    -ms-flex-preferred-size: calc((100% / 12) * 10);
+        flex-basis: calc((100% / 12) * 10);
+    max-width: calc((100% / 12) * 10);
+  }
+  .fcol-sm-11 {
+    -ms-flex-preferred-size: calc((100% / 12) * 11);
+        flex-basis: calc((100% / 12) * 11);
+    max-width: calc((100% / 12) * 11);
+  }
+  .fcol-sm-12 {
+    -ms-flex-preferred-size: calc((100% / 12) * 12);
+        flex-basis: calc((100% / 12) * 12);
+    max-width: calc((100% / 12) * 12);
+  }
+}
+
+/* —————————————— MD —————————————— */
+@media screen and (min-width: 720px) {
+  /* —————————————— MD COL —————————————— */
+  .fcol-md-1 {
+    -ms-flex-preferred-size: calc((100% / 12) * 1);
+        flex-basis: calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
+  }
+  .fcol-md-2 {
+    -ms-flex-preferred-size: calc((100% / 12) * 2);
+        flex-basis: calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2);
+  }
+  .fcol-md-3 {
+    -ms-flex-preferred-size: calc((100% / 12) * 3);
+        flex-basis: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+  }
+  .fcol-md-4 {
+    -ms-flex-preferred-size: calc((100% / 12) * 4);
+        flex-basis: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
+  }
+  .fcol-md-5 {
+    -ms-flex-preferred-size: calc((100% / 12) * 5);
+        flex-basis: calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
+  }
+  .fcol-md-6 {
+    -ms-flex-preferred-size: calc((100% / 12) * 6);
+        flex-basis: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+  }
+  .fcol-md-7 {
+    -ms-flex-preferred-size: calc((100% / 12) * 7);
+        flex-basis: calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
+  }
+  .fcol-md-8 {
+    -ms-flex-preferred-size: calc((100% / 12) * 8);
+        flex-basis: calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
+  }
+  .fcol-md-9 {
+    -ms-flex-preferred-size: calc((100% / 12) * 9);
+        flex-basis: calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
+  }
+  .fcol-md-10 {
+    -ms-flex-preferred-size: calc((100% / 12) * 10);
+        flex-basis: calc((100% / 12) * 10);
+    max-width: calc((100% / 12) * 10);
+  }
+  .fcol-md-11 {
+    -ms-flex-preferred-size: calc((100% / 12) * 11);
+        flex-basis: calc((100% / 12) * 11);
+    max-width: calc((100% / 12) * 11);
+  }
+  .fcol-md-12 {
+    -ms-flex-preferred-size: calc((100% / 12) * 12);
+        flex-basis: calc((100% / 12) * 12);
+    max-width: calc((100% / 12) * 12);
+  }
+}
+
+/* —————————————— LG —————————————— */
+@media screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    max-width: 960px;
+  }
+  /* —————————————— LG COL —————————————— */
+  .fcol-lg-1 {
+    -ms-flex-preferred-size: calc((100% / 12) * 1);
+        flex-basis: calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
+  }
+  .fcol-lg-2 {
+    -ms-flex-preferred-size: calc((100% / 12) * 2);
+        flex-basis: calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2);
+  }
+  .fcol-lg-3 {
+    -ms-flex-preferred-size: calc((100% / 12) * 3);
+        flex-basis: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+  }
+  .fcol-lg-4 {
+    -ms-flex-preferred-size: calc((100% / 12) * 4);
+        flex-basis: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
+  }
+  .fcol-lg-5 {
+    -ms-flex-preferred-size: calc((100% / 12) * 5);
+        flex-basis: calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
+  }
+  .fcol-lg-6 {
+    -ms-flex-preferred-size: calc((100% / 12) * 6);
+        flex-basis: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+  }
+  .fcol-lg-7 {
+    -ms-flex-preferred-size: calc((100% / 12) * 7);
+        flex-basis: calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
+  }
+  .fcol-lg-8 {
+    -ms-flex-preferred-size: calc((100% / 12) * 8);
+        flex-basis: calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
+  }
+  .fcol-lg-9 {
+    -ms-flex-preferred-size: calc((100% / 12) * 9);
+        flex-basis: calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
+  }
+  .fcol-lg-10 {
+    -ms-flex-preferred-size: calc((100% / 12) * 10);
+        flex-basis: calc((100% / 12) * 10);
+    max-width: calc((100% / 12) * 10);
+  }
+  .fcol-lg-11 {
+    -ms-flex-preferred-size: calc((100% / 12) * 11);
+        flex-basis: calc((100% / 12) * 11);
+    max-width: calc((100% / 12) * 11);
+  }
+  .fcol-lg-12 {
+    -ms-flex-preferred-size: calc((100% / 12) * 12);
+        flex-basis: calc((100% / 12) * 12);
+    max-width: calc((100% / 12) * 12);
+  }
+}
+
+/* —————————————— XL —————————————— */
+@media screen and (min-width: 1200px) {
+  /* —————————————— XL COL —————————————— */
+  .fcol-xl-1 {
+    -ms-flex-preferred-size: calc((100% / 12) * 1);
+        flex-basis: calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
+  }
+  .fcol-xl-2 {
+    -ms-flex-preferred-size: calc((100% / 12) * 2);
+        flex-basis: calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2);
+  }
+  .fcol-xl-3 {
+    -ms-flex-preferred-size: calc((100% / 12) * 3);
+        flex-basis: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+  }
+  .fcol-xl-4 {
+    -ms-flex-preferred-size: calc((100% / 12) * 4);
+        flex-basis: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
+  }
+  .fcol-xl-5 {
+    -ms-flex-preferred-size: calc((100% / 12) * 5);
+        flex-basis: calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
+  }
+  .fcol-xl-6 {
+    -ms-flex-preferred-size: calc((100% / 12) * 6);
+        flex-basis: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+  }
+  .fcol-xl-7 {
+    -ms-flex-preferred-size: calc((100% / 12) * 7);
+        flex-basis: calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
+  }
+  .fcol-xl-8 {
+    -ms-flex-preferred-size: calc((100% / 12) * 8);
+        flex-basis: calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
+  }
+  .fcol-xl-9 {
+    -ms-flex-preferred-size: calc((100% / 12) * 9);
+        flex-basis: calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
+  }
+  .fcol-xl-10 {
+    -ms-flex-preferred-size: calc((100% / 12) * 10);
+        flex-basis: calc((100% / 12) * 10);
+    max-width: calc((100% / 12) * 10);
+  }
+  .fcol-xl-11 {
+    -ms-flex-preferred-size: calc((100% / 12) * 11);
+        flex-basis: calc((100% / 12) * 11);
+    max-width: calc((100% / 12) * 11);
+  }
+  .fcol-xl-12 {
+    -ms-flex-preferred-size: calc((100% / 12) * 12);
+        flex-basis: calc((100% / 12) * 12);
+    max-width: calc((100% / 12) * 12);
+  }
+}
+
+/* —————————————— XXL —————————————— */
+@media screen and (min-width: 1400px) {
+  /* —————————————— XXL COL —————————————— */
+  .fcol-xxl-1 {
+    -ms-flex-preferred-size: calc((100% / 12) * 1);
+        flex-basis: calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
+  }
+  .fcol-xxl-2 {
+    -ms-flex-preferred-size: calc((100% / 12) * 2);
+        flex-basis: calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2);
+  }
+  .fcol-xxl-3 {
+    -ms-flex-preferred-size: calc((100% / 12) * 3);
+        flex-basis: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+  }
+  .fcol-xxl-4 {
+    -ms-flex-preferred-size: calc((100% / 12) * 4);
+        flex-basis: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
+  }
+  .fcol-xxl-5 {
+    -ms-flex-preferred-size: calc((100% / 12) * 5);
+        flex-basis: calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
+  }
+  .fcol-xxl-6 {
+    -ms-flex-preferred-size: calc((100% / 12) * 6);
+        flex-basis: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+  }
+  .fcol-xxl-7 {
+    -ms-flex-preferred-size: calc((100% / 12) * 7);
+        flex-basis: calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
+  }
+  .fcol-xxl-8 {
+    -ms-flex-preferred-size: calc((100% / 12) * 8);
+        flex-basis: calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
+  }
+  .fcol-xxl-9 {
+    -ms-flex-preferred-size: calc((100% / 12) * 9);
+        flex-basis: calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
+  }
+  .fcol-xxl-10 {
+    -ms-flex-preferred-size: calc((100% / 12) * 10);
+        flex-basis: calc((100% / 12) * 10);
+    max-width: calc((100% / 12) * 10);
+  }
+  .fcol-xxl-11 {
+    -ms-flex-preferred-size: calc((100% / 12) * 11);
+        flex-basis: calc((100% / 12) * 11);
+    max-width: calc((100% / 12) * 11);
+  }
+  .fcol-xxl-12 {
+    -ms-flex-preferred-size: calc((100% / 12) * 12);
+        flex-basis: calc((100% / 12) * 12);
+    max-width: calc((100% / 12) * 12);
+  }
+}
+/*# sourceMappingURL=frontend-flex.css.map */

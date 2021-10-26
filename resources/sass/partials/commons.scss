@@ -1,0 +1,270 @@
+// ——————————————————————————————————————————————— // 
+// ———————————————————— RESET ———————————————————— // 
+// ——————————————————————————————————————————————— //
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ——————————————————————————————————————————————— // 
+// ———————————————————— FONTS ———————————————————— // 
+// ——————————————————————————————————————————————— //
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url("../../fonts/Founders-Grotesk-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url(".../../fonts/Founders-Grotesk-Medium-Italic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url(".../../fonts/Founders-Grotesk-Medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+// ———————————————————————————————————————————————— // 
+// ———————————————————— COLORS ———————————————————— // 
+// ———————————————————————————————————————————————— //
+
+.bg-white{
+    background-color: $main_light;
+}
+
+.button-lightgreen{
+    background-color: lighten($brand, 15%);
+    color: $main_light;
+    text-decoration: none;
+    a{
+        color: $main_light;
+        text-decoration: none;
+    }
+    &:hover{
+        background-color:lighten($main_dark, 10%);
+        transition: color .2s ease;
+        color: $main_light;
+        text-decoration: none;
+        a{
+            background-color:lighten($main_dark, 10%);
+            transition: color .2s ease;
+            color: $main_light;
+            text-decoration: none;
+        }
+    }
+}
+
+.button-darkgreen{
+    background-color: lighten($main_dark, 10%);
+    color: $main_light;
+    text-decoration: none;
+    a{
+        color: $main_light;
+        text-decoration: none;
+    }
+    &:hover{
+        background-color:lighten($brand, 15%);
+        transition: color .2s ease;
+        color: $main_light;
+        text-decoration: none;
+        a{
+            background-color:lighten($brand, 15%);
+            transition: color .2s ease;
+            color: $main_light;
+            text-decoration: none;
+        }
+    }
+}
+
+.button-purple{
+    background-color: lighten($accent, 10%);
+    color: $main_light;
+    text-decoration: none;
+    a{
+        color: $main_light;
+        text-decoration: none;
+    }
+    &:hover{
+        background-color:lighten($accent, 20%);
+        transition: color .2s ease;
+        color: $main_light;
+        text-decoration: none;
+        a{
+            background-color:lighten($accent, 20%);
+            transition: color .2s ease;
+            color: $main_light;
+            text-decoration: none;
+        }
+    }
+}
+
+// —————————————————————————————————————————————————————————————— // 
+// ———————————————————— BACKEND DROPDOWN FIX ———————————————————— // 
+// —————————————————————————————————————————————————————————————— // 
+@media screen and (max-width: 400px) {
+    .aside-400-width {
+        height: auto !important;
+    }
+    .navbar-aside {
+        margin: 0 !important;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar {
+        padding-left : 0 !important;
+        padding-right : 0 !important;
+
+        .navbar-brand {
+            margin-left: $space_12_5;
+        }
+        .navbar-toggler {
+            margin-right: $space_12_5;
+        }
+
+    }
+
+    .dropdown {
+        background: $main_light;
+        text-align: center;
+        margin-top: 14px;
+
+    }
+    .navbar-nav .dropdown{
+        padding: 0;
+        margin-top: 0 !important;
+    }
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        z-index: 140;
+        float: none;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: $main_light;
+        border-bottom: 2px solid $brand;
+        padding: $space_25 $space_12_5;
+        margin-top: 27px;
+    }
+
+    .navbar-collapse {
+        width: 100vw;
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: right;
+        background-color: $main_light;
+        border-bottom: 2px solid $brand;
+        margin-top: 14px;
+        z-index: 100;
+        text-align: center;
+        padding: $space_25 0;
+
+        .nav-item {
+            text-align: left;
+            padding: 0;
+            .dropdown-toggle {
+                width: 100%;
+                display: inline-block;
+                margin: 0 $space_12_5;
+            }
+            .dropdown-item {
+                text-align: left !important;
+                padding: 0;
+                &:hover {
+                    background-color: transparent !important;
+                }
+            }
+        }
+        .nav-login {
+            padding: 6px $space_12_5;
+            a {
+                display:inline-block;
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar-aside {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+
+// ———————————————————————————————————————————————— // 
+// ———————————————————— LAYOUT ———————————————————— // 
+// ———————————————————————————————————————————————— //
+
+.app-height {
+    height: 100vh;
+}
+
+.content-height{
+    height: calc((100vh - 60px) - 6rem);
+}
+
+.card-height-big{
+    height: 200px;
+}
+.card-height-small{
+    height: 200px;
+}
+
+.height-scroll{
+    overflow-y: auto;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.c_light{
+    color: $main_light;
+}
+
+.light_green{
+    color: $brand;
+}
+
+.dark_green{
+    color: $main_dark;
+}
+
+.purple{
+    color: $accent;
+}
+
+.f_weight{
+    font-weight: bolder;
+}
+
+.data{
+    font-size: 10px;
+}
+
+.m-bottom{
+    margin-bottom: 100px;
+}
+
+.bg-purple{
+    background-color: $accent;
+}
+
+
+
+
+  

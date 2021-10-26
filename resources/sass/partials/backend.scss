@@ -1,0 +1,133 @@
+body{
+    background-color: rgba($brand, 10%);
+    transition: color .2s ease;
+
+    aside{
+        background-color: lighten($brand, 15%);
+        color: $main_dark;
+
+        li{
+            cursor:pointer;
+
+            svg{
+                vertical-align: middle;
+                width: 20px;
+                height: 20px;
+                margin-right: 4px;
+            }
+            a{
+                @include a-reset;
+                color: $main_dark;
+                font-weight: 600;
+                line-height: 20px;
+                vertical-align: middle;
+
+            }
+            .aside-delete{
+                border: none;
+                border-radius: 0;
+                color: $main_dark;
+                font-weight: 600;
+                line-height: 20px;
+                vertical-align: middle;
+                background-color: transparent;
+            }
+
+            &:hover{
+                color: rgba($main_light, 70%);
+                transition: color .2s ease;
+                a{
+                    color: rgba($main_light, 70%);
+                    transition: color .2s ease;
+                }
+                .aside-delete{
+                    color: rgba($main_light, 70%);
+                    transition: color .2s ease;
+                }
+
+            }
+        }
+        
+       
+    }
+
+    .fix-mobile-scroll{
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    @media screen and (min-width:400px){
+        .aside-height{
+            height: 40px;
+            width: 100%;
+            
+           
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .back_lgreen{
+            background-color: lighten($brand, 15%);
+            width: unset;
+            height: unset;
+        
+        }
+    }
+
+    @media screen and (min-width:768px){
+        .aside-height{
+            height: 80px;
+            
+            
+        }
+
+        .back_lgreen{
+            background-color: lighten($brand, 15%);
+            
+            height: unset;
+        
+        }
+    }
+
+    @media screen and (min-width:992px){
+        .aside-height{
+            height: calc((100vh - 60px) - 6rem);
+            margin-bottom: unset;
+        }
+       
+    }
+            
+            
+
+      
+            
+    
+    nav.backend-navbar{
+        background-color: $main_light;
+        border-bottom: 2px solid $brand;
+        color: $main_dark;
+        height: 60px;
+    
+        *:hover{
+            transition: color .2s ease;
+        }
+    
+        a, a.navbar-brand{
+            color: $main_dark;
+            text-decoration: none;
+    
+            &:hover{
+                color: $brand;
+            }
+        }
+     
+    }
+
+    .alert-p{
+        font-size: 1.3rem;
+    }
+}
+
